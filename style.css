@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: aeonik;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 1.2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#card {
+  opacity: 0.98;
+  height: 420px;
+  overflow: hidden;
+  width: 300px;
+  border-radius: 42px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+#card img {
+  position: absolute;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#card .upper-text {
+  z-index: 99;
+  padding: 1rem;
+}
+#card .upper-text h1 {
+  color: rgb(255, 255, 255);
+  text-wrap: nowrap;
+  font-size: 2.17rem;
+  font-weight: 100;
+}
+#card .upper-text h5 {
+  font-weight: 100;
+  color: #545454;
+}
+#card .left-side {
+  display: flex;
+  align-items: center;
+}
+#card .left-side .img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-right: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 0.1px solid #dadada;
+}
+#card .left-side .img .inner-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  object-fit: cover;
+  height: 100%;
+}
+#card .lower-text {
+  z-index: 99;
+  padding: 0.77rem 0.55rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#card .lower-text .img-text {
+  z-index: 99;
+}
+#card .lower-text .img-text h5 {
+  font-weight: 100;
+  font-size: 0.88rem;
+}
+#card .lower-text .img-text h6 {
+  margin-top: 0.3rem;
+  text-align: start;
+  font-size: 0.67rem;
+  opacity: 0.75;
+  font-weight: 100;
+}
+#card .lower-text .right-side {
+  z-index: 99;
+}
+#card .lower-text .right-side button {
+  border: none;
+  border-radius: 15px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  text-wrap: nowrap;
+  padding: 0.77rem 0.73rem;
+  cursor: pointer;
+}
+#card .lower-text .right-side button:active {
+  scale: 0.98;
+}
+#card .lower-text .right-side i {
+  font-size: 1.1rem;
+  margin-right: 0.3rem;
+}
